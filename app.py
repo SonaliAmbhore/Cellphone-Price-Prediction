@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def fun():
-    return render_template("home1.html")
+    return render_template("home3.html")
 
 
 @app.route('/predict',methods=['POST'])
