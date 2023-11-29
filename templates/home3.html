@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cellphone Price Prediction</title>
+</head>
+<body>
+  <h1>Cellphone Price Prediction</h1>
+  <form action="/predict" method="POST">
+    <label for="Product_id">Product ID:</label>
+    <input type="text" id="Product_id" name="Product_id"><br><br>
+
+    <label for="Sale">Sale:</label>
+    <input type="text" id="Sale" name="Sale"><br><br>
+
+    <label for="weight">Weight:</label>
+    <input type="text" id="weight" name="weight"><br><br>
+
+    <label for="resolution">Resolution:</label>
+    <input type="text" id="resolution" name="resolution"><br><br>
+
+    <label for="ppi">PPI:</label>
+    <input type="text" id="ppi" name="ppi"><br><br>
+
+    <label for="cpu_core">CPU Core:</label>
+    <input type="text" id="cpu_core" name="cpu_core"><br><br>
+
+    <label for="cpu_freq">CPU Frequency:</label>
+    <input type="text" id="cpu_freq" name="cpu_freq"><br><br>
+
+    <label for="internal_mem">Internal Memory:</label>
+    <input type="text" id="internal_mem" name="internal_mem"><br><br>
+
+    <label for="ram">RAM (GB):</label>
+    <input type="number" id="ram" name="ram" min="1" step="1"><br><br>
+
+    <label for="battery">Battery Capacity:</label>
+    <input type="number" id="battery" name="battery" min="1" step="1"><br><br>
+
+    <!-- Dropdown for Rear Camera (MP) -->
+    <label for="RearCam">Rear Camera (MP):</label>
+    <select id="RearCam" name="RearCam">
+      <option value="8">8 MP</option>
+      <option value="12">12 MP</option>
+      <option value="16">16 MP</option>
+      <!-- Add more options as needed -->
+    </select><br><br>
+
+    <!-- Dropdown for Front Camera (MP) -->
+    <label for="Front_Cam">Front Camera (MP):</label>
+    <select id="Front_Cam" name="Front_Cam">
+      <option value="5">5 MP</option>
+      <option value="8">8 MP</option>
+      <option value="12">12 MP</option>
+      <!-- Add more options as needed -->
+    </select><br><br>
+
+    <label for="thickness">Thickness:</label>
+    <input type="number" id="thickness" name="thickness" min="1" step="1"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
