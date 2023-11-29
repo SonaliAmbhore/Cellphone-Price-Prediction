@@ -39,6 +39,6 @@ def cellphone_price_pred():
     
        
 if __name__ == '__main__':
-    app.run(port = config.PORT_NUMBER,debug=True)
+    app.run(port = config.PORT_NUMBER,debug=True,host='0.0.0.0')
     
     
