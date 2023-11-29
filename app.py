@@ -11,7 +11,6 @@ def fun():
 
 
 @app.route('/predict',methods=['POST'])
-from function import CellphonePrice
 def cellphone_price_pred():
    
     data = request.form
